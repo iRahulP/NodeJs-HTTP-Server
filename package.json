@@ -1,0 +1,19 @@
+{
+  "name": "nodesrv",
+  "version": "1.0.0",
+  "description": "first Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iRahulP/NodeJs-HTTP-Server.git"
+  },
+  "author": "iRahulP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iRahulP/NodeJs-HTTP-Server/issues"
+  },
+  "homepage": "https://github.com/iRahulP/NodeJs-HTTP-Server#readme"
+}
