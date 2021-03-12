@@ -4,6 +4,6 @@ function add(a, b){
     return a+b;
 }
 
-console.log(add(2,8));
+var args = process.argv.slice(2);
 
-console.log(process.argv)
+console.log("Adding Numbers from provided Args :", add(parseInt(args[0]),parseInt(args[1])));
