@@ -1,10 +1,20 @@
 const http = require('http');
 const port = 8000;
+//module of nodejs used for file oprns 
+const fs = require('fs');
 
 function requestHandler(req, res){
     console.log(req.url);
     res.writeHead(200, {'content-type' : 'text/html'});
-    res.end("<h1 style='color: red'>Hola</h1>");
+    //fs -> filesystem
+    //readfile -> inbuilt async function
+    fs.readFile('./index.html', function(err, data){
+        if(err){
+            console.log('error', err);
+            return re.end('<h1>Error!</h1>');
+        }
+        return res.end(data);
+    });
 }
 
 const server = http.createServer(requestHandler);
