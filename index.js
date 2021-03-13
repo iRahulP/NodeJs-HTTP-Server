@@ -11,8 +11,9 @@ function requestHandler(req, res){
     fs.readFile('./index.html', function(err, data){
         if(err){
             console.log('error', err);
-            return re.end('<h1>Error!</h1>');
+            return res.end('<h1>Error!</h1>');
         }
+        //console.log(data);
         return res.end(data);
     });
 }
